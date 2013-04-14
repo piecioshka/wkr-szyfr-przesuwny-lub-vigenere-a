@@ -1,8 +1,24 @@
-#key {
+#page {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.column {
+  float: left;
+  width: 400px;
+}
+
+.key {
   float: left;
   margin-right: 10px;
 }
 
-#submit {
+.submit {
   float: left;
+}
+
+#version {
+  position: absolute;
+  right: 0;
+  top: 0;
 }

@@ -2,18 +2,24 @@
 <html>
 <head>
   <title>simple hashing</title>
+
+  <link rel="stylesheet" href="css/lib/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/lib/bootswatch.css" />
+  <link rel="stylesheet" href="css/lib/superhero.min.css" />
+  <link rel="stylesheet" href="css/default.css" />
 </head>
 <body>
   <h1>Hash your text</h1>
 
   <form action="/" method="post">
+    <p>plaintext:</p> 
     <textarea id="plain-text"></textarea><br />
-    <input id="key" type="text" />
-    <input type="submit" value="Hash" />
+    <input id="key" class="input-small" type="text" placeholder="Key" />
+    <input id="submit" class="btn btn-danger" type="submit" value="Hash" />
+    <div class="clearfix"></div>
+    <p>ciphertext:</p>
+    <textarea id="cifer-text"></textarea>
   </form>
-
-  <p>result</p>
-  <textarea id="cifer-text"></textarea>
 
   <script src="src/app.js"></script>
   <script src="src/lib/hash.js"></script>

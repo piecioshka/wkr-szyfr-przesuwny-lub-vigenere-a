@@ -8,37 +8,46 @@
     <link rel="stylesheet" href="styles/app.css"/>
 </head>
 <body>
-    <div id="page">
-        <div class="column">
-            <h1>Hash your text</h1>
+    <div id="page" class="well row center-block">
+        <div class="col-md-6 bg-info">
+            <h3>Hash your text</h3>
 
-            <form class="form" action="/#hash" method="post">
-                <p>plaintext:</p>
-                <textarea class="plain-text input-xlarge"></textarea><br/>
+            <form class="form">
+                <div class="form-group">
+                    <label for="first-area" class="clearfix">Plaintext:</label>
+                    <textarea id="first-area" class="plain-text form-control" placeholder="Enter plain text..." rows="5"></textarea>
+                </div>
 
-                <div class="clearfix"></div>
-                <input class="key input-small" type="text" placeholder="Key"/>
-                <input class="submit btn btn-danger" type="submit" value="Hash"/>
+                <div class="form-inline form-group">
+                    <input class="key input-small form-control" type="text" placeholder="Key"/>
+                    <input class="submit btn btn-danger" type="submit" value="Hash"/>
+                </div>
 
-                <div class="clearfix"></div>
-                <p>ciphertext:</p>
-                <textarea class="cifer-text input-xlarge"></textarea>
+                <div class="form-group">
+                    <label for="second-area" class="clearfix">Ciphertext:</label>
+                    <textarea id="second-area" class="cifer-text form-control" placeholder="Waiting for results!" rows="5" disabled></textarea>
+                </div>
             </form>
         </div>
-        <div class="column">
-            <h1>Unhash your ciphertext</h1>
 
-            <form class="form" action="/#unhash" method="post">
-                <p>ciphertext:</p>
-                <textarea class="cifer-text input-xlarge"></textarea>
+        <div class="col-md-6 bg-warning">
+            <h3>Unhash your ciphertext</h3>
 
-                <div class="clearfix"></div>
-                <input class="key input-small" type="text" placeholder="Key"/>
-                <input class="submit btn btn-danger" type="submit" value="Unhash"/>
+            <form class="form">
+                <div class="form-group">
+                    <label for="third-area" class="clearfix">Ciphertext:</label>
+                    <textarea id="third-area" class="cifer-text form-control" placeholder="Enter plain text..." rows="5"></textarea>
+                </div>
 
-                <div class="clearfix"></div>
-                <p>plaintext:</p>
-                <textarea class="plain-text input-xlarge"></textarea><br/>
+                <div class="form-inline form-group">
+                    <input class="key input-small form-control" type="text" placeholder="Key"/>
+                    <input class="submit btn btn-danger" type="submit" value="Unhash"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="fourth-area" class="clearfix">Plaintext:</label>
+                    <textarea id="fourth-area" class="plain-text form-control" placeholder="Waiting for results!" rows="5" disabled></textarea>
+                </div>
             </form>
         </div>
     </div>

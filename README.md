@@ -1,6 +1,6 @@
 # Wstęp do kryptologii - szyfr Cezara
 
-Mini aplikacja zaszyfrować teskt z użyciem szyfru Cezara
+Mini aplikacja zaszyfrować tekst z użyciem szyfru Cezara
 
 ## Demo
 

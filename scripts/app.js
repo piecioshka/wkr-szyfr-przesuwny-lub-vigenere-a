@@ -23,7 +23,7 @@
             var status;
 
             if (!(/^\d+$/).test(v)) {
-                errors.push('Incorrect value param');
+                errors.push('Niepoprawna wartość parametru');
             }
 
             if (_.size(errors)) {

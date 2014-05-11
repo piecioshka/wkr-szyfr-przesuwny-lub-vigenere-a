@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="utf-8">
     <title>Szyfr Cezara - Wstęp do kryptologii</title>
@@ -15,43 +15,43 @@
 
     <div id="page" class="center-block">
         <div class="col-md-6 bg-info">
-            <h3>Encoding</h3>
+            <h3>Kodowanie</h3>
 
             <form class="form">
                 <div class="form-group">
-                    <label for="first-area" class="clearfix">Plaintext:</label>
-                    <textarea id="first-area" class="plain-text form-control" placeholder="Enter plain text..." rows="5"></textarea>
+                    <label for="first-area" class="clearfix">Tekst jawny:</label>
+                    <textarea id="first-area" class="plain-text form-control" placeholder="Wpisz tekst jawny..." rows="5"></textarea>
                 </div>
 
                 <div class="form-inline form-group">
-                    <input class="key form-control" type="text" placeholder="Key (only numbers)" pattern="\d*"/>
-                    <input class="submit btn btn-danger" type="submit" value="Encode!"/>
+                    <input class="key form-control" type="text" placeholder="Klucz (tylko cyfry)" pattern="\d*"/>
+                    <input class="submit btn btn-danger" type="submit" value="Wykonaj"/>
                 </div>
 
                 <div class="form-group">
                     <label for="second-area" class="clearfix">Ciphertext:</label>
-                    <textarea id="second-area" class="cifer-text form-control" placeholder="Waiting for results!" rows="5" disabled></textarea>
+                    <textarea id="second-area" class="cifer-text form-control" rows="5" disabled></textarea>
                 </div>
             </form>
         </div>
 
         <div class="col-md-6 bg-warning">
-            <h3>Decoding</h3>
+            <h3>Dekodowanie</h3>
 
             <form class="form">
                 <div class="form-group">
-                    <label for="third-area" class="clearfix">Ciphertext:</label>
-                    <textarea id="third-area" class="cifer-text form-control" placeholder="Enter plain text..." rows="5"></textarea>
+                    <label for="third-area" class="clearfix">Tekst zakodowany:</label>
+                    <textarea id="third-area" class="cifer-text form-control" placeholder="Wpisz tekst zakodowany..." rows="5"></textarea>
                 </div>
 
                 <div class="form-inline form-group">
-                    <input class="key form-control" type="text" placeholder="Key (only numbers)" pattern="\d*"/>
-                    <input class="submit btn btn-danger" type="submit" value="Decode!"/>
+                    <input class="key form-control" type="text" placeholder="Klucz (tylko cyfry)" pattern="\d*"/>
+                    <input class="submit btn btn-danger" type="submit" value="Wykonaj"/>
                 </div>
 
                 <div class="form-group">
-                    <label for="fourth-area" class="clearfix">Plaintext:</label>
-                    <textarea id="fourth-area" class="plain-text form-control" placeholder="Waiting for results!" rows="5" disabled></textarea>
+                    <label for="fourth-area" class="clearfix">Tekst jawny:</label>
+                    <textarea id="fourth-area" class="plain-text form-control" rows="5" disabled></textarea>
                 </div>
             </form>
         </div>

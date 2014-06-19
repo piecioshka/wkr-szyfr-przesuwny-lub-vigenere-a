@@ -1,6 +1,6 @@
 /**
  * @author Piotr Kowalski <piecioshka@gmail.com>
- * @see http://jsninja.pl/wkr-szyfr-przesuwny/
+ * @see http://jsninja.pl/wkr-szyfr-przesuwny-lub-vigenere-a/
  * @licence The MIT License {@link http://piecioshka.mit-license.org/}
  */
 (function (root, factory) {
@@ -9,6 +9,8 @@
     root.App = factory(root._, root.$);
 }(this, function (_, $) {
     'use strict';
+
+    var rkey = (/^\w*$/);
 
     function App() {
         this.initialize();
@@ -24,7 +26,7 @@
             var errors = [];
             var status;
 
-            if (!(/^\d+$/).test(v)) {
+            if (!rkey.test(v)) {
                 errors.push('Niepoprawna wartość parametru');
             }
 
@@ -38,12 +40,25 @@
             return status;
         },
 
+        _key: function (k, i) {
+            var result = null;
+            if (!isNaN(parseInt(k, 10))) {
+                result = parseInt(k, 10);
+            } else if (_.isString(k)) {
+                k = _.toArray(k);
+                result = _.indexOf(App.ALPHABET, k[i % k.length]);
+            } else {
+                alert('Nie poprawny klucz');
+            }
+            return result;
+        },
 
         hash: function (p, k) {
+            var self = this;
             var s = _.toArray(p);
             var n = App.ALPHABET.length;
-            s = _.map(s, function(x) {
-                var y = (_.indexOf(App.ALPHABET, x) + k) % n;
+            s = _.map(s, function(x, i) {
+                var y = (_.indexOf(App.ALPHABET, x) + self._key(k, i)) % n;
                 // Cipher text
                 var c = App.ALPHABET[y];
                 return c;
@@ -52,10 +67,11 @@
         },
 
         unhash: function (c, k) {
+            var self = this;
             var s = _.toArray(c);
             var n = App.ALPHABET.length;
-            s = _.map(s, function(y) {
-                var x = (_.indexOf(App.ALPHABET, y) - k) % n;
+            s = _.map(s, function(y, i) {
+                var x = (_.indexOf(App.ALPHABET, y) - self._key(k, i)) % n;
                 if (x < 0) x += n;
                 // Plain text
                 var p = App.ALPHABET[x];
@@ -84,9 +100,9 @@
                 this._lowerCase($plaintext, $ciphertext);
 
                 var p = $plaintext.val();
-                var k = +$key.val();
+                var k = $key.val();
                 if (this._checkParams(k)) {
-                    $ciphertext.val(callback(p, k));
+                    $ciphertext.val(callback.call(this, p, k));
                 }
             }, this));
         },
@@ -104,9 +120,9 @@
                 this._lowerCase($plaintext, $ciphertext);
 
                 var p = $ciphertext.val();
-                var k = +$key.val();
+                var k = $key.val();
                 if (this._checkParams(k)) {
-                    $plaintext.val(callback(p, k));
+                    $plaintext.val(callback.call(this, p, k));
                 }
             }, this));
         }

@@ -1,6 +1,6 @@
 /**
  * @author Piotr Kowalski <piecioshka@gmail.com>
- * @see http://jsninja.pl/wkr-szyfr-cezara/
+ * @see http://jsninja.pl/wkr-szyfr-afiniczny/
  * @licence The MIT License {@link http://piecioshka.mit-license.org/}
  */
 (function (root, factory) {

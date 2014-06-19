@@ -1,6 +1,6 @@
 # Wstęp do kryptologii - szyfr Przesuwny
 
-Mini aplikacja zaszyfrować tekst z użyciem szyfru Przesuwny
+Mini aplikacja zaszyfrować tekst z użyciem `Szyfru Przesuwnego`.
 
 ## Demo
 

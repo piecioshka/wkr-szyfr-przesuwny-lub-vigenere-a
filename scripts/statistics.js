@@ -3,5 +3,5 @@
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-5140088-20', 'jsninja.pl/wkr-szyfr-afiniczny');
+ga('create', 'UA-5140088-20', 'jsninja.pl/wkr-szyfr-przesuwny');
 ga('send', 'pageview');

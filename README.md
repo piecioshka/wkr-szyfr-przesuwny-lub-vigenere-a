@@ -1,15 +1,15 @@
-# Wstęp do kryptologii - szyfr Afiniczny
+# Wstęp do kryptologii - szyfr Przesuwny
 
-Mini aplikacja zaszyfrować tekst z użyciem szyfru Afiniczny
+Mini aplikacja zaszyfrować tekst z użyciem szyfru Przesuwny
 
 ## Demo
 
-[http://jsninja.pl/wkr-szyfr-afiniczny/][1]
+[http://jsninja.pl/wkr-szyfr-przesuwny/][1]
 
 ## License
 
 [The MIT License][2]
 
 
-[1]: http://jsninja.pl/wkr-szyfr-afiniczny/
+[1]: http://jsninja.pl/wkr-szyfr-przesuwny/
 [2]: http://piecioshka.mit-license.org/

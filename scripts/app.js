@@ -1,6 +1,6 @@
 /**
  * @author Piotr Kowalski <piecioshka@gmail.com>
- * @see http://jsninja.pl/wkr-szyfr-przesuwny-lub-vigenere-a/
+ * @see http://piecioshka.pl/projects/wkr-szyfr-przesuwny-lub-vigenere-a/
  * @licence The MIT License {@link http://piecioshka.mit-license.org/}
  */
 (function (root, factory) {

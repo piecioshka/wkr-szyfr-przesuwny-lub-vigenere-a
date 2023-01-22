@@ -2,7 +2,7 @@
 
 Mini aplikacja zaszyfrować tekst z użyciem `Szyfru Przesuwnego` lub `Szyfru Vigenere'a`.
 
-## Demo 🎉
+## Preview 🎉
 
 <https://piecioshka.github.io/wkr-szyfr-przesuwny-lub-vigenere-a/>
 
